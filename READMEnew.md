@@ -1,7 +1,7 @@
 
 # 
 
-## [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)];
+## 
 
 ## Table of Contents:
 ◆ [Description](#description)
@@ -28,7 +28,7 @@
 
 
 ## License:
-Eclipse Public License 2.0
+None
 
 ## Credits:
 

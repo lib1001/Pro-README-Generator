@@ -2,27 +2,24 @@
 // If there is no license, return an empty string
 
 function renderLicenseBadge(license) {
-let licenseType = license;
-let licenseBadge = '';
-
-if (licenseType === 'Apache License 2.0') {
-  licenseBadge = '[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)]'
-  return licenseBadge
-} else if (licenseType === 'MIT License') {
-  licenseBadge = '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]'
-  return licenseBadge
-} else if (licenseType === 'Boost Software License 1.0') {
-  licenseBadge = '[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)]'
-  return licenseBadge
-} else if (licenseType === 'Eclipse Public License 2.0') {
-  licenseBadge = '[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]'
-  return licenseBadge
-}else {
-  return licenseBadge = ''
-}
-// switch(license) {
-//   case "MIT"
-//     licenseBadge =  [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)]
+  let licenseType = license;
+  let licenseBadge = '';
+  
+  if (licenseType === 'Apache License 2.0') {
+    licenseBadge = '[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)]'
+    return licenseBadge
+  } else if (licenseType === 'MIT License') {
+    licenseBadge = '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]'
+    return licenseBadge
+  } else if (licenseType === 'Boost Software License 1.0') {
+    licenseBadge = '[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)]'
+    return licenseBadge
+  } else if (licenseType === 'GNU Public License v3.0') {
+    licenseBadge = '[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]'
+    return licenseBadge
+  }else {
+    return licenseBadge = ''
+  }
 
   // [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)]
 
@@ -52,7 +49,7 @@ function generateMarkdown(data) {
   return `
 # ${data.title}
 
-## ${renderLicenseBadge(data.license)};
+## ${renderLicenseBadge(data.license)}
 
 ## Table of Contents:
 ◆ [Description](#description)\n
