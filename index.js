@@ -29,12 +29,12 @@ const questions = [
         type: 'list',
         message: 'What license is used to cover your application?',
         name: 'license',
-        choices: ['Apache License 2.0', 'MIT License', 'Boost Software License 1.0', 'Eclipse Public License 2.0', '']
+        choices: ['Apache License 2.0', 'MIT License', 'Boost Software License 1.0', 'Eclipse Public License 2.0', 'None']
     },
     {
         type: 'input',
         message: 'Who contributed to this project?',
-        name: 'contributing'
+        name: 'credits'
     },
     {
         type: 'input',
