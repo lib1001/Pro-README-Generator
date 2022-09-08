@@ -5,19 +5,19 @@ function renderLicenseBadge(license) {
 
 switch(license) {
   case 'Apache License 2.0':
-  return '[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)]';
+  return '![License: Apache](https://img.shields.io/badge/License-Apache_2.0-blue.svg)';
   break;
 
   case 'MIT License':
-  return '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]';
+  return '![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)';
   break;
 
   case 'Boost Software License 1.0':
-  return '[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)]';
+  return '![License: Boost](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)';
   break;
 
   case 'GNU Public License v3.0':
-  return '[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]';
+  return '![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)';
   break;
   
   default:
@@ -32,19 +32,19 @@ switch(license) {
 function renderLicenseLink(license) {
   switch(license) {
     case 'Apache License 2.0':
-    return '(https://www.apache.org/licenses/LICENSE-2.0)';
+    return '[View License Text](https://www.apache.org/licenses/LICENSE-2.0)';
     break;
   
     case 'MIT License':
-    return '(https://opensource.org/licenses/MIT)';
+    return '[View License Text](https://opensource.org/licenses/MIT)';
     break;
   
     case 'Boost Software License 1.0':
-    return '(https://www.boost.org/LICENSE_1_0.txt)';
+    return '[View License Text](https://www.boost.org/LICENSE_1_0.txt)';
     break;
   
     case 'GNU Public License v3.0':
-    return '(https://www.gnu.org/licenses/gpl-3.0.en.html)';
+    return '[View License Text](https://www.gnu.org/licenses/gpl-3.0.en.html)';
     break;
     
     default:
