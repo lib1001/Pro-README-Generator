@@ -57,7 +57,7 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile(fileName, data, (err) =>
+    return fs.writeFile(fileName, data, (err) =>
     {err ? console.error(err) : console.log('Success! Your README has been generated!')}
     )
 }
@@ -66,7 +66,7 @@ function writeToFile(fileName, data) {
 function init() {
 inquirer.prompt(questions)
 .then(answers => {
-    writeToFile('READMEnew.md', markupGenerator(answers));
+    writeToFile('README.md', markupGenerator({ ...answers}));
 }
 )};
 
