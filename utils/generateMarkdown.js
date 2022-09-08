@@ -2,24 +2,28 @@
 // If there is no license, return an empty string
 
 function renderLicenseBadge(license) {
-  let licenseType = license;
-  let licenseBadge = '';
+
+switch(license) {
+  case 'Apache License 2.0':
+  return '[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)]';
+  break;
+
+  case 'MIT License':
+  return '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]';
+  break;
+
+  case 'Boost Software License 1.0':
+  return '[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)]';
+  break;
+
+  case 'GNU Public License v3.0':
+  return '[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]';
+  break;
   
-  if (licenseType === 'Apache License 2.0') {
-    licenseBadge = '[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)]'
-    return licenseBadge
-  } else if (licenseType === 'MIT License') {
-    licenseBadge = '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]'
-    return licenseBadge
-  } else if (licenseType === 'Boost Software License 1.0') {
-    licenseBadge = '[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)]'
-    return licenseBadge
-  } else if (licenseType === 'GNU Public License v3.0') {
-    licenseBadge = '[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]'
-    return licenseBadge
-  }else {
-    return licenseBadge = ''
-  }
+  default:
+  return '';
+
+}
 }
 
 

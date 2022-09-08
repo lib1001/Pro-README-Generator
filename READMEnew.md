@@ -1,7 +1,7 @@
 
-# 
+# ddddddddddd
 
-## [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)]
+## [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]
 
 ## Table of Contents:
 ◆ [Description](#description)
@@ -19,28 +19,28 @@
 ◆ [Contact Information](#contact-information)
 
 ## Description:
-
+ffffffffffff
 
 ## Installation:
-
+ggggggggggggg
 
 ## Usage:
-
+jjjjjjjjjjjj
 
 ## License:
-Apache License 2.0
+MIT License
 
-(https://opensource.org/licenses/Apache-2.0)
+(https://opensource.org/licenses/MIT)
 
 
 ## Credits:
-
+fddddd
 
 ## Tests:
-
+eeeeeeee
 
 ## Contact Information:
-Find me on GitHub at !
+Find me on GitHub at fffff!
 
-Email me at 
+Email me at gggggggg
  
