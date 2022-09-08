@@ -30,42 +30,52 @@ switch(license) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  let licenseChoice = license;
-  let licenseLink = '';
+  switch(license) {
+    case 'Apache License 2.0':
+    return '(https://www.apache.org/licenses/LICENSE-2.0)';
+    break;
   
-  if (licenseChoice === 'Apache License 2.0') {
-    licenseLink = '(https://opensource.org/licenses/Apache-2.0)'
-    return licenseLink
-  } else if (licenseChoice === 'MIT License') {
-    licenseLink = '(https://opensource.org/licenses/MIT)'
-    return licenseLink
-  } else if (licenseChoice === 'Boost Software License 1.0') {
-    licenseLink = '(https://opensource.org/licenses/BSL-1.0)'
-    return licenseLink
-  } else if (licenseChoice === 'GNU Public License v3.0') {
-    licenseLink = '(https://opensource.org/licenses/GPL-3.0)'
-    return licenseLink
-  }else {
-    return licenseLink = ''
+    case 'MIT License':
+    return '(https://opensource.org/licenses/MIT)';
+    break;
+  
+    case 'Boost Software License 1.0':
+    return '(https://www.boost.org/LICENSE_1_0.txt)';
+    break;
+  
+    case 'GNU Public License v3.0':
+    return '(https://www.gnu.org/licenses/gpl-3.0.en.html)';
+    break;
+    
+    default:
+    return '';
+  
   }
-}
+  }
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   // change this to make simpler
-  
-  if (license === 'Apache License 2.0') {
-    return 'Apache License 2.0'
-  } else if (license === 'MIT License') {
-    return 'MIT License'
-  } else if (license === 'Boost Software License 1.0') {
-    return 'Boost Software License 1.0'
-  } else if (license === 'GNU Public License v3.0') {
-    return 'GNU Public License v3.0'
-  }else {
+
+  if (license === 'None') {
     return ''
   }
+  else {
+    return `${license}`
+  };
+  
+  // if (license === 'Apache License 2.0') {
+  //   return 'Apache License 2.0'
+  // } else if (license === 'MIT License') {
+  //   return 'MIT License'
+  // } else if (license === 'Boost Software License 1.0') {
+  //   return 'Boost Software License 1.0'
+  // } else if (license === 'GNU Public License v3.0') {
+  //   return 'GNU Public License v3.0'
+  // }else {
+  //   return ''
+  // }
 }
 
 // TODO: Create a function to generate markdown for README
@@ -112,8 +122,8 @@ ${data.tests}
 
 ## Contact Information:
 
-Find me on GitHub at ${data.username}!\n
-Email me at ${data.email}
+Find me on GitHub at [${data.username}](https://github.com/${data.username})!\n
+Email me at [${data.email}](mailTo:${data.email}).
  `;
 }
 // add links for contact
