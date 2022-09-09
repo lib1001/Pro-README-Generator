@@ -32,7 +32,7 @@ To initiate the application, the user enters 'node index.js' into their terminal
 
 Watch the video below to see the README generator in action!
 
-![Video](https://youtu.be/Z_ZZShukR1Q)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Z_ZZShukR1Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## License:
 
