@@ -28,7 +28,7 @@ npm i inquirer
 
 ## Usage:
 
-To initiate the application, the user enters 'node index.js' into their terminal. The user will then be prompted with a series of questions pertaining to the information included in a professional README file. The user simply types their responses and presses 'enter' once each question is answered. When asked to choose a license, the user is able to select from a list of options. Once all the questions have been answered, the user will be informed that a new REA has been generatedcan then view their completed README.md in theDME file. The uer s proper format. The README will include the project title, a badge for the license, a functional table of contents, project description, installation requirements, usage, license information and link, credits, tests, and contact information, with working links.
+To initiate the application, the user enters 'node index.js' into their terminal. The user will then be prompted with a series of questions pertaining to the information included in a professional README file. The user simply types their responses and presses 'enter' once each question is answered. When asked to choose a license, the user is able to select from a list of options. Once all the questions have been answered, the user will be informed that a new README file has been generated. The user can then view their completed README.md in the proper format. The README will include the project title, a badge for the license, a functional table of contents, project description, installation requirements, usage, license information and link, credits, tests, and contact information, with working links.
 
 Watch the video below to see the README generator in action!
 
